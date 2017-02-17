@@ -38,9 +38,10 @@
   			
   			<div class="columns text-right medium-9">
   				<ul class="menu">
-  					<li><a href="#about">about game</a></li>
-  					<li><a href="#play">how to play game</a></li>
-  					<li><a href="#subscribe">subscribe</a></li>
+  					<li class="nav-tab"><a href="#about">about game</a></li>
+  					<li class="nav-tab"><a href="#play">how to play game</a></li>
+  					<li class="nav-tab"><a href="#subscribe">subscribe</a></li>
+  					<li ><a href="mailto:botornot.ml@google.com">contact us</a></li>
   				</ul>
   			</div>
   		</div>
@@ -197,7 +198,7 @@
 	
 	</section>
 
-	<footer class="footer-lower" style="margin-top: 0">
+	<footer class="footer-lower" style="margin-top: 0" id="footer">
 		<div class="row">
 			<div class="medium-7 columns">
 				<span>© 2017 BotOrNot - All Rights Reserved</span>
@@ -226,7 +227,7 @@
     <script>
       $(document).foundation();
 
-      $('nav').on('click', 'a', function(event){
+      $('.nav-tab').on('click', 'a', function(event){
 		    event.preventDefault();
 		    $('html, body').animate({
 		        scrollTop: $( $.attr(this, 'href') ).offset().top
