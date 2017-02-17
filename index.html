@@ -202,6 +202,14 @@
 			<div class="medium-7 columns">
 				<span>© 2017 BotOrNot - All Rights Reserved</span>
 			</div>
+
+			<div class="medium-5 columns text-right">
+				<ul class="social-profiles">
+					<li><a href="http://www.facebook.com/botornot" target="_blank"><i class="icon social_facebook"></i></a></li>
+					<li><a href="http://twitter.com/botornot_ml"><i class="icon social_twitter"></i></a></li>
+					<li><a href="mailto:botornot.ml@gmail.com"><i class="icon icon_mail"></i></a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 
@@ -218,7 +226,7 @@
     <script>
       $(document).foundation();
 
-      $(document).on('click', 'a', function(event){
+      $('nav').on('click', 'a', function(event){
 		    event.preventDefault();
 		    $('html, body').animate({
 		        scrollTop: $( $.attr(this, 'href') ).offset().top
