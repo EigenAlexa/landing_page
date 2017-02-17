@@ -326,8 +326,13 @@ $(document).ready(function () {
 
     });
 
+
+
+    // Set up an event listener for the contact form.
+
+
 	
-   // Contact form code
+   //Contact form code
 
     $('form.form-contact').submit(function (e) {
 		// return false so form submits through jQuery rather than reloading page.
@@ -358,13 +363,14 @@ $(document).ready(function () {
             
             jQuery.ajax({
                 type: "POST",
-                url: "mail/mail.php",
+                url: "http://botornot.us15.list-manage.com/subscribe/post?u=c817814f96f0ec6c5eef93858&amp;id=e51a0a51f6&c=?",
                 data: thisForm.serialize(),
+                dataType: 'jsonp',
                 success: function (response) {
                 	// Swiftmailer always sends back a number representing numner of emails sent.
 					// If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
-					$(thisForm).find('.form-loading').remove();
-					$(thisForm).find('input[type="submit"]').show();
+					// $(thisForm).find('.form-loading').remove();
+					// $(thisForm).find('input[type="submit"]').show();
 					if($.isNumeric(response)){
 						if(parseInt(response) > 0){
 							thisForm.find('.form-success').fadeIn(1000);
