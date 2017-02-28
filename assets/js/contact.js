@@ -59,7 +59,7 @@
                     // thisForm.find('.form-success').fadeIn(1000);
                     //     thisForm.find('.form-error').fadeOut(1000);
                     //     setTimeout(function(){ thisForm.find('.form-success').fadeOut(500); }, 5000);
-                }
+                },
                 error: function (errorObject, errorText, errorHTTP) {
                     // Keep the current error text in a data attribute on the form
                     thisForm.find('.form-error').attr('original-error', thisForm.find('.form-error').text());
