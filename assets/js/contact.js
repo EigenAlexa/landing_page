@@ -39,8 +39,8 @@
                 success: function (response) {
                     // Swiftmailer always sends back a number representing numner of emails sent.
                     // If this is numeric (not Swift Mailer error text) AND greater than 0 then show success message.
-                    // $(thisForm).find('.form-loading').remove();
-                    // $(thisForm).find('input[type="submit"]').show();
+                    $(thisForm).find('.form-loading').remove();
+                    $(thisForm).find('input[type="submit"]').show();
                     // if($.isNumeric(response)){
                     //     if(parseInt(response) > 0){
                     //         thisForm.find('.form-success').fadeIn(1000);
@@ -66,8 +66,8 @@
                     // // Show the error with the returned error text.
                     // thisForm.find('.form-error').text(errorHTTP).fadeIn(1000);
                     // thisForm.find('.form-success').fadeOut(1000);
-                    // $(thisForm).find('.form-loading').remove();
-                    // $(thisForm).find('input[type="submit"]').show();
+                    $(thisForm).find('.form-loading').remove();
+                    $(thisForm).find('input[type="submit"]').show();
                     thisForm.find('.form-success').fadeIn(1000);
                     thisForm.find('.form-error').fadeOut(1000);
                     setTimeout(function(){ thisForm.find('.form-success').fadeOut(500); }, 5000);
