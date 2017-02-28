@@ -462,9 +462,9 @@ $(window).load(function () {
             $('.animate').each(function () {
                 $(this).addClass('animated fadeInUp');
             });
-        }, 500);
+        }, 200);
 
-    }, 1000);
+    }, 600);
 
     /************** Navigation Scripts **************/
 
