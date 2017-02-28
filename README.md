@@ -1,2 +1,2 @@
-# landing_page
-Landing Page for BotOrNot
+# Euro-Travels
+A Free Responsive Agency Template 
