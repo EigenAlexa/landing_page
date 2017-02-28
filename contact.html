@@ -94,11 +94,13 @@
                     <fieldset>
                         <input name="name" id="form-name" type="text" name="name" class="validate-required"  placeholder="Your Name" style="padding: 10px" />
                         <input name="email" id="form-email"  type="text" name="email" class="validate-email" style="padding: 10px" placeholder="Your Email" />
+                        <input type="hidden" name="_subject" id="subject" value="New message from landing page!">
+                        <input type="text" name="_gotcha" style="display:none">
                     </fieldset>
                     <textarea id="form-msg" rows="10" class="validate-required" placeholder="Your Message" name="message"></textarea>
                     <input type="submit" value="Send" class="button button-small" value="Send Message" />
                     <div class="details-error form-error">*Please complete all fields correctly</div>
-                    <div class="form-sent form-success">Thankyou, your enquiry has been sent</div>
+                    <div class="form-sent form-success">Thank you, your enquiry has been sent</div>
                 </form> 
 
             </div>  

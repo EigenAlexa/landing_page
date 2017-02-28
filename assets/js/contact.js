@@ -32,8 +32,8 @@
             $(thisForm).find('input[type="submit"]').hide();
             
             jQuery.ajax({
-                type: "POST",
                 url: "https://formspree.io/botornot.ml@gmail.com",
+                method: "POST",
                 data: thisForm.serialize(),
                 dataType: 'json',
                 success: function (response) {
